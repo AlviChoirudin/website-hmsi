@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIMA SI Telkom University</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="navbar" class="bg-white shadow-md fixed w-full z-50 navbar">
+      <div
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+          <img src="./src/img/LOGO HMSI.png" alt="Logo" class="h-8 w-8 mr-2" />
+          <span class="font-semibold text-xl text-cyan-600">HMSI</span>
+        </a>
+
+        <!-- Navbar Items (Desktop) -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-700 hover:text-cyan-600"
+            >Home</a
+          >
+          <a href="aboutUs.html" class="text-gray-700 hover:text-cyan-600"
+            >About Us</a
+          >
+          <a href="departemen.html" class="text-gray-700 hover:text-cyan-600"
+            >Departemen</a
+          >
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden focus:outline-none relative z-50"
+        >
+          <div class="w-6 h-6 flex flex-col justify-between">
+            <span class="block w-full h-1 bg-gray-700"></span>
+            <span class="block w-full h-1 bg-gray-700"></span>
+            <span class="block w-full h-1 bg-gray-700"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="absolute top-16 left-0 w-full bg-gray-100 hidden flex-col text-center space-y-4 p-4 shadow-md md:hidden navbar"
+      >
+        <a href="#" class="block text-gray-700 hover:text-cyan-600">Home</a>
+        <a href="#" class="block text-gray-700 hover:text-cyan-600">About Us</a>
+        <a href="#" class="block text-gray-700 hover:text-cyan-600"
+          >Departemen</a
+        >
+      </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="re h-screen flex items-center justify-center">
+      <!-- Background Image dengan Blur -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="/src/img/banner.png"
+          alt="Background"
+          class="w-full h-full object-cover object-center"
+        />
+        <div class="absolute inset-0 bg-opacity-50 backdrop-blur-sm"></div>
+      </div>
+
+      <!-- Overlay dengan Blur -->
+      <div class="absolute inset-0 bg-opacity-50 backdrop-blur-sm"></div>
+
+      <!-- Teks di Atas Gambar -->
+      <div class="relative z-10 text-center" data-aos="zoom-in">
+        <h1 class="text-4xl font-bold text-white">
+          Himpunan Mahasiswa Sistem Informasi
+        </h1>
+        <p class="text-gray-200 mt-4">Satu Hati Selalu Di Depan</p>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <!-- Gambar -->
+          <div class="w-full md:w-1/2" data-aos="fadeInUp">
+            <img
+              src="src/img/logo2.png"
+              alt="Himpunan Mahasiswa Islam"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <!-- Teks -->
+          <div class="w-full md:w-1/2" data-aos="fade-right">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">WHO WE ARE</h1>
+            <h2 class="text-2xl font-semibold text-gray-700 mb-8">
+              Himpunan Mahasiswa Sistem Informasi Telkom University
+            </h2>
+            <p class="text-gray-600 mb-8">
+              Program Studi S1 Sistem Informasi berdiri pada sejak 30 November
+              2007. Himpunan Mahasiswa Sistem Informasi (HMSI) berdiri sejak 8
+              Maret 2014. Selama kurang lebih 6 tahun, wadah keorganisasian dan
+              kemahasiswaan HMSI bernaung kepada Himpunan Mahasiswa Teknik
+              Industri (HMTI).
+            </p>
+            <a
+              href="#"
+              class="inline-block bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-white hover:text-cyan-500 hover:scale-90 transition-transform duration-300"
+            >
+              LEARN MORE
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Media Upload-->
+    <section id="departemen" class="py-12">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6" data-aos="fade-right">
+          Media Upload
+        </h2>
+        <p class="text-gray-600 mb-4" data-aos="fade-left">
+          Vidio terbaru dari YouTube HMSI
+        </p>
+      </div>
+      <div class="container mx-auto px-6">
+        <!-- Swiper Container -->
+        <div class="swiper">
+          <div class="swiper-wrapper mt-4 mb-4" data-aos="fade-right">
+            <!-- Card 1 -->
+            <div class="swiper-slide">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <a
+                  href="https://www.youtube.com/watch?v=U-m1TlFHTfE"
+                  target="_blank"
+                  class="block"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/U-m1TlFHTfE/maxresdefault.jpg"
+                    alt="Thumbnail YouTube"
+                    class="w-full h-auto rounded-lg"
+                  />
+                </a>
+                <div class="mt-4 text-center">
+                  <a
+                    href="https://www.youtube.com/watch?v=U-m1TlFHTfE"
+                    target="_blank"
+                    class="inline-block text-white  bg-cyan-500 rounded px-4 py-2 rounded-lg hover:bg-white hover:text-cyan-500 hover:scale-90 transition-transform duration-300"
+                  >
+                    Watch On YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="swiper-slide">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <a
+                  href="https://www.youtube.com/watch?v=b0EugM-0xS4"
+                  target="_blank"
+                  class="block"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/b0EugM-0xS4/maxresdefault.jpg"
+                    alt="Thumbnail YouTube"
+                    class="w-full h-auto rounded-lg"
+                  />
+                </a>
+                <div class="mt-4 text-center">
+                  <a
+                    href="https://www.youtube.com/watch?v=b0EugM-0xS4"
+                    target="_blank"
+                    class="inline-block text-white  bg-cyan-500 rounded px-4 py-2 rounded-lg hover:bg-white hover:text-cyan-500 hover:scale-90 transition-transform duration-300"
+                  >
+                    Watch On YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="swiper-slide">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <a
+                  href="https://www.youtube.com/watch?v=V--7zZhcUBw"
+                  target="_blank"
+                  class="block"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/V--7zZhcUBw/maxresdefault.jpg"
+                    alt="Thumbnail YouTube"
+                    class="w-full h-auto rounded-lg"
+                  />
+                </a>
+                <div class="mt-4 text-center">
+                  <a
+                    href="https://www.youtube.com/watch?v=V--7zZhcUBw"
+                    target="_blank"
+                    class="inline-block text-white  bg-cyan-500 rounded px-4 py-2 rounded-lg hover:bg-white hover:text-cyan-500 hover:scale-90 transition-transform duration-300"
+                  >
+                    Watch On YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="swiper-slide">
+              <div class="bg-white p-6 rounded-lg shadow-lg">
+                <a
+                  href="https://youtu.be/644SglGjmao?si=SKOznRowpmavs3XY"
+                  target="_blank"
+                  class="block"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/644SglGjmao/maxresdefault.jpg"
+                    alt="Thumbnail YouTube"
+                    class="w-full h-auto rounded-lg"
+                  />
+                </a>
+                <div class="mt-4 text-center">
+                  <a
+                    href="https://youtu.be/644SglGjmao?si=SKOznRowpmavs3XY"
+                    target="_blank"
+                    class="inline-block text-white  bg-cyan-500 rounded px-4 py-2 rounded-lg hover:bg-white hover:text-cyan-500 hover:scale-90 transition-transform duration-300"
+                  >
+                    Watch On YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tambahkan navigasi (tombol next/prev) -->
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Departemen Section -->
+    <section id="departemen" class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6" data-aos="fade-right">
+          Departemen
+        </h2>
+        <p class="text-gray-600 mb-4" data-aos="fade-right">
+          Our lab is where innovation happens. Here are some of our latest
+          experiments and projects:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex">
+          <!-- Project 1 -->
+          <a
+            href="aksi.html"
+            class="block bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/aksi-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">AKSI</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga stabilitas dan meningkatkan kualitas akademik mahasiswa
+              Sistem Informasi serta memaksimalkan pemanfaatan teknologi sebagai
+              support system dalam kegiatan-kegiatan HMSI.
+            </p>
+          </a>
+          <!-- Project 2 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/dm-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">DM</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+          <!-- Project 3 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/erp-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">ERP</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+          <!-- Project 4 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/hrd-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">HRD</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+          <!-- Project 5 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/kaderisasi-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">KADERISASI</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+          <!-- Project 6 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/kemahasiswaan-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              KEMAHASISWAAN
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+          <!-- Project 7 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/kominfo-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">KOMINFO</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+          <!-- Project 8 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/relasi-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">RELASI</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Komunitas Section -->
+    <section id="Komunitas" class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6" data-aos="fade-right">
+          Komunitas
+        </h2>
+        <p class="text-gray-600 mb-4" data-aos="fade-right">
+          Our lab is where innovation happens. Here are some of our latest
+          experiments and projects:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Project 1 -->
+          <a
+            href="aksi.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/CyanMusic-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Cyan Music</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga stabilitas dan meningkatkan kualitas akademik mahasiswa
+              Sistem Informasi serta memaksimalkan pemanfaatan teknologi sebagai
+              support system dalam kegiatan-kegiatan HMSI.
+            </p>
+          </a>
+          <!-- Project 2 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/koalisi-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Koalisi</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+          <!-- Project 2 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/psi-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">PSI</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+          <!-- Project 2 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/tencom-logo.png"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Tencom</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+          <!-- Project 2 -->
+          <a
+            href="hrd.html"
+            class="block p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            <img
+              src="/src/img/tifosi-logo.PNG"
+              alt="Logo AKSI"
+              class="w-12 h-12 mr-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Tifosi</h3>
+            <p class="text-gray-600 mb-4">
+              Menjaga kestabilan dan memantau kinerja pengurus HMSI dalam
+              menjalankan program kerja, serta meningkatkan rasa kekeluargaan
+              dan kebersamaan dalam kepengurusan HMSI.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+  </body>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // Konfigurasi Swiper
+      slidesPerView: 1, // Jumlah card yang ditampilkan sekaligus
+      spaceBetween: 20, // Jarak antar card
+      loop: true, // Loop carousel
+      autoplay: {
+        delay: 3500, // Waktu delay (ms) untuk autoplay
+        disableOnInteraction: false, // Tetap autoplay meskipun diinteraksi
+      },
+      navigation: {
+        nextEl: ".swiper-button-next", // Tombol next
+        prevEl: ".swiper-button-prev", // Tombol prev
+      },
+      breakpoints: {
+        // Responsif untuk layar yang lebih besar
+        768: {
+          slidesPerView: 2, // Tampilkan 2 card pada layar medium
+        },
+        1024: {
+          slidesPerView: 3, // Tampilkan 3 card pada layar besar
+        },
+      },
+    });
+  </script>
+
+  <script>
+    feather.replace();
+  </script>
+</html>
