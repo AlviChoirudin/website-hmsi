@@ -3,7 +3,274 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About Us - HMSI Telkom University</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Header Section -->
+    <header id="navbar" class="bg-white shadow-md fixed w-full z-50 navbar">
+      <div
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="./src/img/LOGO HMSI.png" alt="Logo" class="h-8 w-8 mr-2" />
+          <span class="font-semibold text-xl text-cyan-600">HMSI</span>
+        </a>
+
+        <!-- Navbar Items (Desktop) -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-700 hover:text-cyan-600"
+            >Home</a
+          >
+          <a href="aboutUs.html" class="text-gray-700 hover:text-cyan-600"
+            >About Us</a
+          >
+          <a href="departemen.html" class="text-gray-700 hover:text-cyan-600"
+            >Departemen</a
+          >
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden focus:outline-none relative z-50"
+        >
+          <div class="w-6 h-6 flex flex-col justify-between">
+            <span class="block w-full h-1 bg-gray-700"></span>
+            <span class="block w-full h-1 bg-gray-700"></span>
+            <span class="block w-full h-1 bg-gray-700"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="absolute top-16 left-0 w-full bg-gray-100 hidden flex-col text-center space-y-4 p-4 shadow-md md:hidden navbar"
+      >
+        <a href="index.html" class="block text-gray-700 hover:text-cyan-600"
+          >Home</a
+        >
+        <a href="aboutUs.html" class="block text-gray-700 hover:text-cyan-600"
+          >About Us</a
+        >
+        <a
+          href="departemen.html"
+          class="block text-gray-700 hover:text-cyan-600"
+          >Departemen</a
+        >
+      </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <!-- Gambar -->
+          <div class="w-full md:w-1/2" data-aos="fadeInUp">
+            <img
+              src="src/img/logo2.png"
+              alt="Himpunan Mahasiswa Sistem Informasi"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <!-- Teks -->
+          <div class="w-full md:w-1/2" data-aos="fade-right">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">About Us</h1>
+            <h2 class="text-2xl font-semibold text-gray-700 mb-8">
+              Himpunan Mahasiswa Sistem Informasi Telkom University
+            </h2>
+            <p class="text-gray-600 mb-8">
+              Program Studi S1 Sistem Informasi berdiri pada 30 November 2007.
+              Himpunan Mahasiswa Sistem Informasi (HMSI) didirikan pada 8 Maret
+              2014. Selama kurang lebih 6 tahun, wadah keorganisasian dan
+              kemahasiswaan HMSI bernaung di bawah Himpunan Mahasiswa Teknik
+              Industri (HMTI). Saat ini, HMSI telah menjadi organisasi
+              independen yang fokus pada pengembangan mahasiswa Sistem Informasi
+              di Telkom University.
+            </p>
+            <p class="text-gray-600 mb-8">
+              HMSI memiliki berbagai departemen dan komunitas yang bertujuan
+              untuk meningkatkan kualitas akademik, soft skills, dan pengalaman
+              mahasiswa dalam bidang teknologi informasi. Kami juga aktif dalam
+              berbagai kegiatan seperti seminar, workshop, dan kompetisi untuk
+              mendukung pengembangan mahasiswa.
+            </p>
+            <p class="text-gray-600 mb-8">
+              Visi kami adalah menjadi wadah yang mampu menciptakan mahasiswa
+              Sistem Informasi yang berkompeten, kreatif, dan berkarakter. Misi
+              kami adalah menyelenggarakan kegiatan yang mendukung pengembangan
+              akademik dan non-akademik mahasiswa, serta membangun jaringan yang
+              kuat dengan alumni dan industri.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visi Section -->
+      <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+          <div class="text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Visi</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              Menjadi wadah kesatuan organisasi mahasiswa Sistem Informasi
+              seluruh Indonesia yang bertujuan untuk melahirkan mahasiswa Sistem
+              Informasi yang berwawasan IPTEK dan IMTAQ serta profesional
+              dibidangnya.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Misi Section -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Misi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <!-- Card 1 -->
+              <div
+                class="bg-gray-100 p-6 rounded-lg shadow-md"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Apa ya</h3>
+                <p class="text-gray-600">
+                  Menjalin komunikasi dan mempererat silaturahmi mahasiswa
+                  Sistem Informasi dan membangun jaringan antara anggota dan
+                  alumni dalam rangka meningkatan penguasaan IPTEK dan
+                  profesionalisme Sistem Informasi.
+                </p>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="bg-gray-100 p-6 rounded-lg shadow-md"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Apa ya</h3>
+                <p class="text-gray-600">
+                  Meningkatkan peran HMSI Telkom University agar menjadi
+                  organisasi kemahasiswaan yang menuju basis keprofesian dengan
+                  memantapkan keberadaan organisasi di kalangan
+                  anggota,masyarakat, pemerintah dan industri.
+                </p>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="bg-gray-100 p-6 rounded-lg shadow-md"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Apa ya</h3>
+                <p class="text-gray-600">
+                  Mengembangkan sikap ilmiah dan sikap keahlian atau arah
+                  profesi mahasiswa melalui kegiatan dan tradisi ilmiah dalam
+                  bidang IPTEK agar mampu berperan aktif dalam pembangunan
+                  nasional.
+                </p>
+              </div>
+
+              <!-- Card 4 -->
+              <div
+                class="bg-gray-100 p-6 rounded-lg shadow-md"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Apa ya</h3>
+                <p class="text-gray-600">
+                  Mengembangkan organisasi sebagai wadah koordinasi kegiatan dan
+                  forum komunikasi untuk mewujudkan partisipasi mahasiswa dalam
+                  pengabdian masyarakat dan pembangunan sesuai dengan ilmu
+                  Sistem Informasi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-slate-400 py-8">
+      <div class="container mx-auto px-6 text-center">
+        <!-- Teks "Connect with Us" -->
+        <h3 class="text-xl font-semibold text-white mb-4">Connect with Us</h3>
+
+        <!-- Icons -->
+        <div class="flex justify-center space-x-6">
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/hmsi_telkomuniversity/"
+            target="_blank"
+            class="text-white hover:text-cyan-600 transition-colors duration-300"
+          >
+            <i data-feather="instagram"></i>
+          </a>
+
+          <!-- YouTube -->
+          <a
+            href="https://www.youtube.com/@hmsitelkomuniversity/videos"
+            target="_blank"
+            class="text-white hover:text-cyan-600 transition-colors duration-300"
+          >
+            <i data-feather="youtube"></i>
+          </a>
+
+          <!-- Spotify -->
+          <a
+            href="https://open.spotify.com/show/2f0vKl5lMOLQPPcIMYEeGB?si=9e52369d7cb843e5"
+            target="_blank"
+            class="text-white hover:text-cyan-600 transition-colors duration-300"
+          >
+            <i data-feather="music"></i>
+          </a>
+
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/hmsi.unitel"
+            target="_blank"
+            class="text-white hover:text-cyan-600 transition-colors duration-300"
+          >
+            <i data-feather="facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
