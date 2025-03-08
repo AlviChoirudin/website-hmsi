@@ -10,3 +10,12 @@ body {
 .navbar {
   background-color: rgba(255, 255, 255, 0.8);
 }
+
+#main-title,
+#tagline {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#menu-btn:hover span {
+  background-color: #06b6d4; /* Warna cyan */
+}
